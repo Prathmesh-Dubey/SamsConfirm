@@ -6,6 +6,12 @@
       "runtimeExecutable": "npx",
       "runtimeArgs": ["--yes", "serve", "-l", "5173", "."],
       "port": 5173
+    },
+    {
+      "name": "gen-med",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "8990", "--directory", "S:/Projects/gen-med"],
+      "port": 8990
     }
   ]
 }

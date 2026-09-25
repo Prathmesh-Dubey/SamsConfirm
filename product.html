@@ -25,11 +25,12 @@
       </a>
 
       <nav class="s2-nav__links" id="s2NavLinks" aria-label="Primary">
-        <a href="index2.html#hazardous-areas"><span>Hazardous Areas</span></a>
-        <a href="index2.html#certifications"><span>Certifications</span></a>
-        <a href="index2.html#device"><span>Technology</span></a>
-        <a href="index2.html#about"><span>About</span></a>
-        <a href="index2.html#reach"><span>Markets</span></a>
+        <a href="product.html" aria-current="page"><span>Smart EX-04</span></a>
+        <a href="certifications.html"><span>Certifications</span></a>
+        <a href="industries.html"><span>Industries</span></a>
+        <a href="markets.html"><span>Markets</span></a>
+        <a href="about.html"><span>About</span></a>
+        <a href="contact.html"><span>Contact</span></a>
       </nav>
 
       <div class="s2-nav__actions">
@@ -41,7 +42,7 @@
             <span>Launching Q4 2026</span>
           </span>
         </span>
-        <a href="#distributors" class="s2-btn s2-btn--ghost s2-btn--sm">Become a Distributor</a>
+        <a href="become-a-distributor.html" class="s2-btn s2-btn--ghost s2-btn--sm">Become a Distributor</a>
         <button class="s2-nav__toggle" id="s2NavToggle" type="button" aria-label="Toggle menu" aria-expanded="false">
           <span></span><span></span><span></span>
         </button>
@@ -57,12 +58,13 @@
           <span>Launching Q4 2026</span>
         </span>
       </span>
-      <a href="index2.html#hazardous-areas">Hazardous Areas</a>
-      <a href="index2.html#certifications">Certifications</a>
-      <a href="index2.html#device">Technology</a>
-      <a href="index2.html#about">About</a>
-      <a href="index2.html#reach">Markets</a>
-      <a href="#distributors" class="s2-btn s2-btn--primary">Become a Distributor</a>
+      <a href="product.html" aria-current="page">Smart EX-04</a>
+      <a href="certifications.html">Certifications</a>
+      <a href="industries.html">Industries</a>
+      <a href="markets.html">Markets</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="become-a-distributor.html" class="s2-btn s2-btn--primary">Become a Distributor</a>
     </div>
   </header>
 
@@ -70,17 +72,22 @@
 
     <!-- ============ PRODUCT DETAIL ============ -->
     <section class="s2-pd">
-      <div class="s2-wrap s2-pd__back">
-        <a href="index2.html#device" class="s2-pd__backlink">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M19 12H5M11 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          Back to Products
-        </a>
-      </div>
+      <div class="s2-wrap">
 
-      <div class="s2-wrap s2-pd__grid">
+        <nav class="s2-pd__crumbs" aria-label="Breadcrumb">
+          <a href="index2.html">Home</a>
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <a href="index2.html#device">Products</a>
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span aria-current="page">SAMS EX&#8209;04Z1</span>
+        </nav>
+
+        <div class="s2-pd__grid">
 
         <div class="s2-pd__gallery" data-reveal>
           <div class="s2-pd__mainimg">
+            <div class="s2-pd__rings" aria-hidden="true"></div>
+            <span class="s2-pd__viewlabel" id="pdViewLabel">Front view</span>
             <img id="pdMainImage" src="img/m360/front.webp" alt="SAMS EX-04Z1 rugged smartphone — front view">
             <button class="s2-tov__360" id="tov360Btn2" type="button" aria-haspopup="dialog" aria-controls="tov360Modal2">
               <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 12a9 9 0 1 0 9-9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M3 12 6 9M3 12l3 3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -88,63 +95,147 @@
             </button>
           </div>
           <div class="s2-pd__thumbs" id="pdThumbs" role="tablist" aria-label="Product views">
-            <button type="button" class="s2-pd__thumb is-active" data-img="img/m360/front.webp" aria-label="Front view">
-              <img src="img/m360/front.webp" alt="" loading="lazy">
+            <button type="button" class="s2-pd__thumb is-active" role="tab" aria-selected="true" data-img="img/m360/front.webp" data-label="Front view">
+              <img src="img/m360/front.webp" alt="" loading="lazy"><span>Front</span>
             </button>
-            <button type="button" class="s2-pd__thumb" data-img="img/m360/left.webp" aria-label="Left side view">
-              <img src="img/m360/left.webp" alt="" loading="lazy">
+            <button type="button" class="s2-pd__thumb" role="tab" aria-selected="false" data-img="img/m360/left.webp" data-label="Left side view">
+              <img src="img/m360/left.webp" alt="" loading="lazy"><span>Left</span>
             </button>
-            <button type="button" class="s2-pd__thumb" data-img="img/m360/back.webp" aria-label="Back view">
-              <img src="img/m360/back.webp" alt="" loading="lazy">
+            <button type="button" class="s2-pd__thumb" role="tab" aria-selected="false" data-img="img/m360/back.webp" data-label="Back view">
+              <img src="img/m360/back.webp" alt="" loading="lazy"><span>Back</span>
             </button>
-            <button type="button" class="s2-pd__thumb" data-img="img/m360/right.webp" aria-label="Right side view">
-              <img src="img/m360/right.webp" alt="" loading="lazy">
+            <button type="button" class="s2-pd__thumb" role="tab" aria-selected="false" data-img="img/m360/right.webp" data-label="Right side view">
+              <img src="img/m360/right.webp" alt="" loading="lazy"><span>Right</span>
             </button>
-            <button type="button" class="s2-pd__thumb" data-img="img/m360/top.webp" aria-label="Top view">
-              <img src="img/m360/top.webp" alt="" loading="lazy">
+            <button type="button" class="s2-pd__thumb" role="tab" aria-selected="false" data-img="img/m360/top.webp" data-label="Top view">
+              <img src="img/m360/top.webp" alt="" loading="lazy"><span>Top</span>
             </button>
           </div>
         </div>
 
         <div class="s2-pd__info" data-reveal>
-          <div class="s2-pd__badges">
-            <span class="s2-pill s2-pill--progress">ATEX</span>
-            <span class="s2-pill s2-pill--progress">IECEx</span>
-            <span class="s2-pill s2-pill--progress">NEC 500</span>
-            <span class="s2-pill s2-pill--neutral">Zone 1 &middot; Zone 2</span>
-          </div>
+          <span class="s2-pd__status">
+            <span class="s2-status-dot" aria-hidden="true"><span class="s2-status-dot__ping"></span></span>
+            <span><strong>Certification in progress</strong> &middot; Launching Q4 2026</span>
+          </span>
 
           <h1>SAMS <span class="s2-text-sky">EX&#8209;04Z1</span></h1>
+          <p class="s2-pd__tagline">Intrinsically safe Android smartphone for Zone&nbsp;1 &amp; Zone&nbsp;2 hazardous areas.</p>
 
-          <p class="s2-pd__desc">An intrinsically safe Android smartphone engineered for Zone&nbsp;1 and Zone&nbsp;2 hazardous environments, purpose-built for oil &amp; gas, petrochemical, mining, power generation, pharmaceutical and marine &amp; offshore operations. It pairs a Qualcomm Snapdragon platform running Android&nbsp;16 with a reinforced, glove-operable housing rated IP68 and MIL&#8209;STD&#8209;810H, engineered to IECEx, ATEX and NEC&nbsp;500 for entry into the world&rsquo;s most demanding hazardous-area sites.</p>
+          <p class="s2-pd__desc">Purpose-built for oil &amp; gas, petrochemical, mining, power generation, pharmaceutical and marine &amp; offshore operations. It pairs a Qualcomm Snapdragon platform running Android&nbsp;16 with a reinforced, glove-operable housing rated IP68 and MIL&#8209;STD&#8209;810H, engineered to IECEx, ATEX and NEC&nbsp;500 for entry into the world&rsquo;s most demanding hazardous-area sites.</p>
 
-          <div class="s2-pd__features">
-            <h2>Key Features</h2>
-            <ul class="s2-pd__featlist">
-              <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9.5" stroke="currentColor" stroke-width="1.6"/><path d="M8 12.3l2.6 2.6L16.2 9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Android 16, Enterprise-managed operating system</li>
-              <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9.5" stroke="currentColor" stroke-width="1.6"/><path d="M8 12.3l2.6 2.6L16.2 9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Qualcomm Snapdragon, 8-core processing platform</li>
-              <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9.5" stroke="currentColor" stroke-width="1.6"/><path d="M8 12.3l2.6 2.6L16.2 9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>50 MP rear camera with phase-detect autofocus &amp; LED flash</li>
-              <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9.5" stroke="currentColor" stroke-width="1.6"/><path d="M8 12.3l2.6 2.6L16.2 9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>4,000 mAh battery with intrinsically safe charging circuitry</li>
-              <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9.5" stroke="currentColor" stroke-width="1.6"/><path d="M8 12.3l2.6 2.6L16.2 9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Sunlight-readable display with glove &amp; wet-hand touch support</li>
-              <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9.5" stroke="currentColor" stroke-width="1.6"/><path d="M8 12.3l2.6 2.6L16.2 9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>4G LTE, dual-band Wi-Fi, Bluetooth &amp; NFC connectivity</li>
-              <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9.5" stroke="currentColor" stroke-width="1.6"/><path d="M8 12.3l2.6 2.6L16.2 9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Multi-constellation GNSS (GPS &middot; GLONASS) for lone-worker safety</li>
-              <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9.5" stroke="currentColor" stroke-width="1.6"/><path d="M8 12.3l2.6 2.6L16.2 9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>IP68 rated &mdash; dust-tight &amp; protected against continuous immersion</li>
-              <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9.5" stroke="currentColor" stroke-width="1.6"/><path d="M8 12.3l2.6 2.6L16.2 9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>MIL&#8209;STD&#8209;810H durability rated, industrial-grade housing</li>
-              <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9.5" stroke="currentColor" stroke-width="1.6"/><path d="M8 12.3l2.6 2.6L16.2 9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Engineered to IECEx, ATEX &amp; NEC&nbsp;500 for Zone&nbsp;1 &amp; Zone&nbsp;2</li>
-            </ul>
+          <div class="s2-pd__highlights">
+            <div class="s2-pd__hl">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M6 9.5v6a1 1 0 0 0 1 1h1v2.5a1.3 1.3 0 0 0 2.6 0V16.5h2.8v2.5a1.3 1.3 0 0 0 2.6 0V16.5h1a1 1 0 0 0 1-1v-6H6z" fill="currentColor"/><path d="M6 8.5h12a6 6 0 0 0-3.2-4.6l.9-1.6a.4.4 0 1 0-.7-.4l-.9 1.6a6.6 6.6 0 0 0-4.2 0l-.9-1.6a.4.4 0 1 0-.7.4l.9 1.6A6 6 0 0 0 6 8.5Z" fill="currentColor"/></svg>
+              <strong>Android 16</strong><span>Enterprise-managed</span>
+            </div>
+            <div class="s2-pd__hl">
+              <svg viewBox="0 0 24 24" fill="none"><rect x="7" y="7" width="10" height="10" rx="1.5" stroke="currentColor" stroke-width="1.8"/><path d="M9.5 3.5v3M14.5 3.5v3M9.5 17.5v3M14.5 17.5v3M3.5 9.5h3M3.5 14.5h3M17.5 9.5h3M17.5 14.5h3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+              <strong>Snapdragon</strong><span>8-core platform</span>
+            </div>
+            <div class="s2-pd__hl">
+              <svg viewBox="0 0 24 24" fill="none"><rect x="2.5" y="7" width="16" height="10" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M21.5 10.5v3M6.5 10.5v3M10.5 10.5v3M14.5 10.5v3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+              <strong>4,000 mAh</strong><span>IS charging circuitry</span>
+            </div>
+            <div class="s2-pd__hl">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M4 8h3l2-3h6l2 3h3a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="12" cy="13.5" r="3.5" stroke="currentColor" stroke-width="1.8"/></svg>
+              <strong>50 MP</strong><span>Inspection camera</span>
+            </div>
+            <div class="s2-pd__hl">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 3s6 6.6 6 11a6 6 0 1 1-12 0c0-4.4 6-11 6-11Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+              <strong>IP68</strong><span>Dust-tight &middot; immersion</span>
+            </div>
+            <div class="s2-pd__hl">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 3l7 3v5c0 4.5-3 8.4-7 9.5-4-1.1-7-5-7-9.5V6l7-3z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <strong>MIL&#8209;STD&#8209;810H</strong><span>Rugged housing</span>
+            </div>
+          </div>
+
+          <div class="s2-pd__certrow">
+            <div class="s2-pd__certrow-logos" aria-hidden="true">
+              <img src="img/cretLogos/iecex.png" alt="">
+              <img src="img/cretLogos/atex.png" alt="">
+              <img src="img/cretLogos/nec-500.png" alt="">
+            </div>
+            <p><strong>IECEx &middot; ATEX &middot; NEC 500</strong> for Zone&nbsp;1 &amp; Zone&nbsp;2 &mdash; certification in progress with T&Uuml;V Germany.</p>
           </div>
 
           <div class="s2-pd__cta">
-            <a href="#distributors" class="s2-btn s2-btn--primary">Register Interest &rarr;</a>
-            <a href="#distributors" class="s2-btn s2-btn--outline">Become a Distributor</a>
+            <a href="#distributors" class="s2-btn s2-btn--primary">Register Interest
+              <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="#specifications" class="s2-btn s2-btn--outline">View Specifications</a>
           </div>
         </div>
 
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DESIGN INTENT ============ -->
+    <section class="s2-pg-sec s2-pg-sec--ice">
+      <div class="s2-wrap s2-pg-route">
+        <div class="s2-pg-route__prose" data-reveal><span class="s2-eyebrow"><span class="s2-eyebrow__dot"></span>Design intent</span>
+          <h2>Why an intrinsically safe phone is built differently</h2>
+          <div class="s2-pg-prose">
+            <p>Every hazardous area device answers one question: can the energy stored or released inside it ignite the atmosphere around it. Intrinsic safety, the <em>ia</em> protection concept, answers it by limiting that energy at source rather than by containing an explosion inside a heavy enclosure. Voltage, current, capacitance and inductance are held below the ignition threshold for the gas group, and the surface temperature is held below the temperature class. That constraint reaches every component on the board, not just the battery.</p>
+            <p>This is what makes an intrinsically safe smartphone hard to build, and why so few exist next to the hundreds of consumer models released each year. A modern application processor wants peak current; intrinsic safety wants it capped. A large battery wants energy density; intrinsic safety wants the fault energy bounded even when a cell is short circuited. The EX-04Z1 is designed around that tension rather than around it: a Qualcomm Snapdragon octa-core platform and a 4,000 mAh cell inside a design intended to satisfy Ex ib at gas group IIC, the most demanding of the three.</p>
+            <p>The second design decision is dust. A great many hazardous area handsets are specified for gas only, which leaves polymer, grain, phosphate, coal and pharmaceutical plants to buy a second device or accept a compromise. The EX-04Z1 is designed for Zone 21 as well as Zone 1, so one part number covers the vapour side and the dust side of an integrated site. Where a project is written to the American code instead of the IEC one, NEC 500 Class I Division 1 is being pursued in parallel.</p>
+            <p>The third is that a safety device is useless if people leave it in the locker. An explosion proof mobile phone that is slow, dim in sunlight or unusable in gloves gets replaced by an unauthorised consumer phone carried in a pocket, which is the outcome no HSE manager wants. So the specification is deliberately close to a modern business handset: a current Snapdragon platform, Android 16, a 50 MP camera with phase detection autofocus, and NFC. The device has to be the one a technician actually prefers to carry.</p>
+          </div>
+        </div>
+        <aside class="s2-pg-panel" data-reveal>
+          <h3>Target marking and status</h3>
+          <dl class="s2-pg-dl">
+            <div><dt>ATEX marking target</dt><dd>II 2 G Ex ib IIC T4</dd></div>
+            <div><dt>Zones</dt><dd>Zone 1 gas · Zone 21 dust</dd></div>
+            <div><dt>IECEx</dt><dd>Certification in progress</dd></div>
+            <div><dt>ATEX and UKEX</dt><dd>Certification in progress</dd></div>
+            <div><dt>North America</dt><dd>NEC 500 Class I Div 1 target</dd></div>
+            <div><dt>Launch</dt><dd>Q4 2026</dd></div>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ============ WHAT SETS IT APART ============ -->
+    <section class="s2-pg-sec">
+      <div class="s2-wrap">
+        <div class="s2-pg-head" data-reveal><span class="s2-eyebrow"><span class="s2-eyebrow__dot"></span>Difference</span>
+          <h2>What sets the EX-04Z1 apart</h2>
+          <p class="s2-pg-head__lede">The hazardous area phone market is small and slow moving. Several of the devices a buyer will be shown are years old, run an Android release that no longer receives security patches, or are certified for gas but not for dust. These are the points the EX-04Z1 is being designed to answer.</p>
+        </div>
+        <div class="s2-pg-cards">
+          <article class="s2-pg-card" data-reveal><span class="s2-pg-card__n">01</span>
+            <h3>A current silicon platform</h3>
+            <p>A Qualcomm Snapdragon octa-core processor, not a low-tier chipset chosen because it was easy to keep inside the energy limits. Site apps, permit systems, asset management clients and video calls behave the way a technician expects them to.</p>
+          </article>
+          <article class="s2-pg-card" data-reveal><span class="s2-pg-card__n">02</span>
+            <h3>Android 16 from day one</h3>
+            <p>A flameproof or intrinsically safe handset stays in service far longer than a consumer phone, so the Android release it launches on decides how long your security team will tolerate it. The EX-04Z1 starts on Android 16 with EMM and MDM enrolment.</p>
+          </article>
+          <article class="s2-pg-card" data-reveal><span class="s2-pg-card__n">03</span>
+            <h3>Gas and dust in one part number</h3>
+            <p>Designed for Zone 1 and Zone 21 together. Sites that handle powders, polymers, fertiliser or grain alongside flammable vapour do not need to specify and stock two different handsets.</p>
+          </article>
+          <article class="s2-pg-card" data-reveal><span class="s2-pg-card__n">04</span>
+            <h3>A camera worth using</h3>
+            <p>A 50 MP sensor with phase detection autofocus, which is what turns an inspection photograph into usable evidence. Where photography is permit controlled, the camera can be restricted centrally through the MDM profile.</p>
+          </article>
+          <article class="s2-pg-card" data-reveal><span class="s2-pg-card__n">05</span>
+            <h3>Positioning that works on a plot plan</h3>
+            <p>Four-constellation GNSS across GPS, GLONASS, BeiDou and Galileo. On a tank farm or an open field with no landmark to describe, a coordinate on the record is worth more than a description.</p>
+          </article>
+          <article class="s2-pg-card" data-reveal><span class="s2-pg-card__n">06</span>
+            <h3>Built to be dropped and washed down</h3>
+            <p>IP68 sealing and MIL-STD-810H testing, because the realistic failure modes are a fall from a scaffold, a wash-down at end of shift and a bag of dust, not laboratory conditions.</p>
+          </article>
+        </div>
       </div>
     </section>
 
     <!-- ============ TECHNICAL SPECIFICATIONS ============ -->
-    <section class="s2-pd__specs">
+    <section class="s2-pd__specs" id="specifications">
       <div class="s2-wrap">
         <h2 data-reveal>Technical Specifications</h2>
         <div class="s2-pd__spectable-wrap" data-reveal>
@@ -216,6 +307,73 @@
             <span class="s2-pill s2-pill--live">Integrated</span>
           </div>
 
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FLEET MANAGEMENT ============ -->
+    <section class="s2-pg-sec s2-pg-sec--ice">
+      <div class="s2-wrap s2-pg-route">
+        <div class="s2-pg-route__prose" data-reveal><span class="s2-eyebrow"><span class="s2-eyebrow__dot"></span>Fleet management</span>
+          <h2>How it fits an enterprise estate</h2>
+          <div class="s2-pg-prose">
+            <p>An ex phone that has to be managed by hand is a burden on the same IT team that already runs several thousand office devices. The EX-04Z1 runs Android 16 with enterprise mobility management, so it enrols into the same EMM or MDM console as the rest of your fleet, takes the same corporate profile, and appears in the same compliance reporting. There is no separate tool and no separate skill to learn.</p>
+            <p>That matters most for camera policy. A camera is the single most useful feature on a hazardous area mobile phone and the single most sensitive one on a live plant, where photography usually runs on a permit. Managing the device centrally means the camera can be disabled by default and enabled by policy, group or location, rather than relying on a sticker over the lens.</p>
+            <p>It also matters for the applications that justify the purchase in the first place: permit to work, isolation and lockout, rounds and readings, defect reporting, asset tagging over NFC, push-to-talk and lone worker checks. These are ordinary Android applications, so the ones your organisation already uses will generally run without a bespoke port. Where an application relies on a hardware feature such as a barcode engine or a specific accessory connector, ask us before you assume it; those details are to be confirmed at launch.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ QUESTIONS ============ -->
+    <section class="s2-pg-sec">
+      <div class="s2-wrap">
+        <div class="s2-pg-head" data-reveal><span class="s2-eyebrow"><span class="s2-eyebrow__dot"></span>Questions</span>
+          <h2>EX-04Z1 questions</h2>
+        </div>
+        <div class="s2-pg-faq">
+          <details class="s2-pg-qa" data-reveal>
+            <summary>Is the EX-04Z1 certified yet?</summary>
+            <div class="s2-pg-qa__a">
+              <p>No. The device is pre-launch and IECEx, ATEX and NEC 500 Class I Division 1 are all in progress ahead of the Q4 2026 launch. Nothing will be supplied into a classified area before the certificate covering that area exists.</p>
+            </div>
+          </details>
+          <details class="s2-pg-qa" data-reveal>
+            <summary>Which zones is it designed for?</summary>
+            <div class="s2-pg-qa__a">
+              <p>Zone 1 and Zone 21, which covers flammable gas and vapour and combustible dust. The ATEX marking target is II 2 G Ex ib IIC T4. Zone 0 is not targeted.</p>
+            </div>
+          </details>
+          <details class="s2-pg-qa" data-reveal>
+            <summary>What does II 2 G Ex ib IIC T4 actually mean?</summary>
+            <div class="s2-pg-qa__a">
+              <p>Equipment group II is surface industry rather than mining. Category 2 G is gas atmospheres where an explosive atmosphere is likely in normal operation, which is Zone 1. Ex ib is intrinsic safety at the highest protection level, IIC is the most demanding gas group including hydrogen and acetylene, and T4 caps the maximum surface temperature at 135 degrees Celsius. It is a target, not a marking we hold today.</p>
+            </div>
+          </details>
+          <details class="s2-pg-qa" data-reveal>
+            <summary>Is it an explosion proof phone or an intrinsically safe one?</summary>
+            <div class="s2-pg-qa__a">
+              <p>Strictly, intrinsically safe. Explosion proof and flameproof describe the Ex d concept, where an enclosure contains an ignition. Buyers use all three terms for the same shopping trip, so we answer to them, but the protection concept being certified is Ex ib.</p>
+            </div>
+          </details>
+          <details class="s2-pg-qa" data-reveal>
+            <summary>Can I see full dimensions, weight and display size?</summary>
+            <div class="s2-pg-qa__a">
+              <p>Those are to be confirmed at launch and will be published on the datasheet once the design is frozen for certification. We would rather withhold a figure than publish one that changes.</p>
+            </div>
+          </details>
+          <details class="s2-pg-qa" data-reveal>
+            <summary>Will it work on 5G?</summary>
+            <div class="s2-pg-qa__a">
+              <p>The published radio specification is 4G LTE, plus Wi-Fi, Bluetooth and NFC. Anything beyond that is to be confirmed at launch.</p>
+            </div>
+          </details>
+          <details class="s2-pg-qa" data-reveal>
+            <summary>How do I get one to evaluate?</summary>
+            <div class="s2-pg-qa__a">
+              <p>Register interest with your site, area classification and the operator or contract you work under. We will send the datasheet and the certification schedule, and tell you what evaluation units are available and when. Pre-launch pricing is on request; we do not publish prices or quote lead times while certification is running.</p>
+            </div>
+          </details>
         </div>
       </div>
     </section>
@@ -330,45 +488,44 @@
 
         <div class="s2-footer__col">
           <span>Products</span>
-          <a href="index2.html#device">EX&#8209;04Z1</a>
-          <a href="product.html">Specifications</a>
-          <a href="index2.html#hazardous-areas">Certifications</a>
-          <a href="index2.html#device">Request Datasheet</a>
+          <a href="product.html">Smart EX-04</a>
+          <a href="product.html#specifications">Specifications</a>
+          <a href="certifications.html">Certifications</a>
+          <a href="contact.html?subject=Datasheet%20Request">Request Datasheet</a>
         </div>
 
         <div class="s2-footer__col">
           <span>Company</span>
-          <a href="index2.html#about">About SAMS</a>
-          <a href="#distributors">Become a Distributor</a>
-          <a href="index2.html#featured-product">Industry Sectors</a>
-          <a href="index2.html#reach">Global Reach</a>
+          <a href="about.html">About SAMS</a>
+          <a href="become-a-distributor.html">Become a Distributor</a>
+          <a href="industries.html">Industries</a>
+          <a href="insights.html">Insights</a>
         </div>
 
         <div class="s2-footer__col">
           <span>Markets</span>
-          <a href="index2.html#reach">Middle East <em>9</em></a>
-          <a href="index2.html#reach">Europe <em>21</em></a>
-          <a href="index2.html#reach">Americas <em>4</em></a>
-          <a href="index2.html#reach">Asia Pacific <em>6</em></a>
-          <a href="index2.html#reach">Africa &amp; CIS <em>1</em></a>
-          <a href="https://sams-mobile.com/markets/">All markets &rarr;</a>
+          <a href="markets.html#middle-east">Middle East <em>9</em></a>
+          <a href="markets.html#europe">Europe <em>21</em></a>
+          <a href="markets.html#americas">Americas <em>6</em></a>
+          <a href="markets.html#asia-pacific">Asia Pacific <em>10</em></a>
+          <a href="markets.html#africa-cis">Africa &amp; CIS <em>1</em></a>
+          <a href="markets.html">All markets &rarr;</a>
         </div>
 
         <div class="s2-footer__col">
           <span>Support</span>
-          <a href="#distributors">Product Support</a>
-          <a href="#distributors">Distributor Enquiries</a>
+          <a href="support.html">Product Support</a>
+          <a href="contact.html">Contact Us</a>
           <a href="mailto:info@sams-mobile.com">info@sams-mobile.com</a>
-          <a href="#distributors">Contact Us</a>
         </div>
       </div>
 
       <div class="s2-footer__bottom">
         <span>&copy; 2026 SAMS Mobile. All rights reserved. Registered in the United Kingdom.</span>
         <div class="s2-footer__legal">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Use</a>
-          <a href="#">Cookie Policy</a>
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Use</a>
+          <a href="cookie-policy.html">Cookie Policy</a>
         </div>
       </div>
     </div>
