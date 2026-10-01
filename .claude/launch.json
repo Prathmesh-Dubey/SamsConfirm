@@ -12,6 +12,18 @@
       "runtimeExecutable": "python",
       "runtimeArgs": ["-m", "http.server", "8990", "--directory", "S:/Projects/gen-med"],
       "port": 8990
+    },
+    {
+      "name": "portfolio",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["--prefix", "S:/Projects/portfolio", "run", "dev", "--", "-p", "3100"],
+      "port": 3100
+    },
+    {
+      "name": "portfolio-prod",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["--prefix", "S:/Projects/portfolio", "run", "start", "--", "-p", "3200"],
+      "port": 3200
     }
   ]
 }

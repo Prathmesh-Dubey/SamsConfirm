@@ -73,40 +73,17 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  /* General enquiry form */
-  const form = document.getElementById("s2ContactForm");
-  const note = document.getElementById("s2ContactNote");
-  if (form && note) {
-    setupForm(
-      form,
-      note,
-      { firstName: "First name", lastName: "Last name", email: "Email", phone: "Phone", company: "Company", subject: "Subject", message: "Message" },
-      (data) => data.get("subject") + " — " + data.get("firstName") + " " + data.get("lastName")
-    );
-
-    const subject = document.getElementById("ctSubject");
-    const firstName = document.getElementById("ctFirst");
-
-    function setSubject(value) {
-      const field = subject.closest(".s2-field");
-      subject.value = value;
-      field.classList.add("has-value");
-      if (field.classList.contains("is-invalid")) validateField(field);
-    }
-
-    const requested = new URLSearchParams(window.location.search).get("subject");
-    if (requested && Array.from(subject.options).some((o) => o.value === requested)) setSubject(requested);
-
-    document.querySelectorAll("[data-subject]").forEach((el) =>
-      el.addEventListener("click", (e) => {
-        setSubject(el.dataset.subject);
-        if (el.tagName === "BUTTON") {
-          e.preventDefault();
-          form.scrollIntoView({ behavior: "smooth", block: "center" });
-        }
-        firstName.focus({ preventScroll: true });
-      })
-    );
+  /* Links such as contact.html?subject=Datasheet%20Request: carry the subject into the email link,
+     or jump straight to the distributor form for distributor enquiries. */
+  const requested = new URLSearchParams(window.location.search).get("subject");
+  const hqEmail = document.getElementById("s2HqEmail");
+  if (requested && hqEmail) {
+    hqEmail.href = "mailto:info@sams-mobile.com?subject=" + encodeURIComponent(requested);
+    hqEmail.closest(".s2-ct-hqs__card")?.classList.add("has-subject");
+  }
+  if (requested === "Distributor Enquiry") {
+    const dist = document.getElementById("distributors");
+    if (dist) window.scrollTo({ top: dist.getBoundingClientRect().top + window.scrollY - 80, behavior: "instant" });
   }
 
   /* Distributor enquiry form */

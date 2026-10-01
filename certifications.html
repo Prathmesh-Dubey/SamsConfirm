@@ -66,7 +66,7 @@
     </div>
   </header>
 
-  <main id="s2-main">
+  <main id="s2-main" class="s2-cf">
     <section class="s2-pg-hero">
       <div class="s2-pg-hero__grid" aria-hidden="true"></div>
       <div class="s2-pg-hero__glow" aria-hidden="true"></div>
@@ -85,119 +85,216 @@
         </div>
       </div>
     </section>
-    <section class="s2-pg-sec">
-      <div class="s2-wrap s2-pg-route">
-        <div class="s2-pg-route__prose" data-reveal><span class="s2-eyebrow"><span class="s2-eyebrow__dot"></span>Status</span>
+    <!-- ============ STATUS ============ -->
+    <section class="s2-pg-sec s2-cf-status">
+      <div class="s2-wrap">
+        <div class="s2-pg-head" data-reveal><span class="s2-eyebrow"><span class="s2-eyebrow__dot"></span>Status</span>
           <h2>Read this before anything else on this page</h2>
-          <div class="s2-pg-prose">
+        </div>
+
+        <div class="s2-cf-notice" data-reveal>
+          <div>
+            <strong class="s2-cf-notice__title">No certificate has been issued for the EX&#8209;04Z1 yet</strong>
             <p>SAMS Mobile does not hold an IECEx Certificate of Conformity, an ATEX EU-type examination certificate, a UKEX certificate, an NEC 500 listing, or any national approval for the EX-04Z1. Every one of them is in progress ahead of the Q4 2026 launch. If you find a page, a reseller listing or a marketplace entry that says otherwise, it is wrong, and we would like to know about it.</p>
-            <p>We state that first because certification is the one thing a buyer of a hazardous area phone cannot verify from a brochure, and because the market has a long history of loose language. “Ex rated”, “ATEX compliant” and “designed to ATEX standards” are not certification. A certificate is a numbered document issued by a named certification body against a named standard edition, with a schedule attached, and it either exists or it does not.</p>
-            <p>The ATEX and IECEx route is running with TÜV in Germany. Naming the body matters: a certificate is only as good as the organisation that issues it, and a European notified body is the evidence most operators outside Europe work from as well. It does not mean a certificate exists yet — it means you can see who is assessing the device and against what. What SAMS can give you today is the certification schedule: which certificates are being sought, by which route, against which standards, and what stage each is at. That lets your HSE and engineering teams begin an equipment selection justification while our certification runs. When a certificate is issued we will publish its number and the full marking string. Until then, treat every specification on this site as a design target.</p>
           </div>
         </div>
-        <aside class="s2-pg-panel" data-reveal>
-          <h3>Programme status</h3>
-          <dl class="s2-pg-dl">
-            <div><dt>IECEx CoC</dt><dd>In progress</dd></div>
-            <div><dt>ATEX</dt><dd>In progress</dd></div>
-            <div><dt>UKEX</dt><dd>In progress</dd></div>
-            <div><dt>NEC 500 Class I Div 1</dt><dd>In progress</dd></div>
-            <div><dt>National schemes</dt><dd>Planned, sequenced after IECEx</dd></div>
-            <div><dt>Certificates issued</dt><dd>None to date</dd></div>
-          </dl>
-        </aside>
+
+        <div class="s2-cf-status__grid">
+          <div class="s2-cf-status__blocks">
+            <article class="s2-cf-block" data-reveal>
+              <div>
+                <h3>Why we say it first</h3>
+                <p>We state that first because certification is the one thing a buyer of a hazardous area phone cannot verify from a brochure, and because the market has a long history of loose language. &ldquo;Ex rated&rdquo;, &ldquo;ATEX compliant&rdquo; and &ldquo;designed to ATEX standards&rdquo; are not certification. A certificate is a numbered document issued by a named certification body against a named standard edition, with a schedule attached, and it either exists or it does not.</p>
+              </div>
+            </article>
+            <article class="s2-cf-block" data-reveal>
+              <div>
+                <h3>Who is assessing the device</h3>
+                <p>The ATEX and IECEx route is running with T&Uuml;V in Germany. Naming the body matters: a certificate is only as good as the organisation that issues it, and a European notified body is the evidence most operators outside Europe work from as well. It does not mean a certificate exists yet &mdash; it means you can see who is assessing the device and against what.</p>
+                <p>What SAMS can give you today is the certification schedule: which certificates are being sought, by which route, against which standards, and what stage each is at. That lets your HSE and engineering teams begin an equipment selection justification while our certification runs. When a certificate is issued we will publish its number and the full marking string. Until then, treat every specification on this site as a design target.</p>
+              </div>
+            </article>
+          </div>
+
+          <aside class="s2-cf-board" data-reveal>
+            <div class="s2-cf-board__head">
+              <h3>Programme status</h3>
+              <span class="s2-cf-board__live"><span class="s2-status-dot" aria-hidden="true"><span class="s2-status-dot__ping"></span></span>Live</span>
+            </div>
+            <ul class="s2-cf-board__list">
+              <li><span class="s2-cf-board__name">IECEx CoC</span><span class="s2-pill s2-pill--progress">In progress</span></li>
+              <li><span class="s2-cf-board__name">ATEX</span><span class="s2-pill s2-pill--progress">In progress</span></li>
+              <li><span class="s2-cf-board__name">UKEX</span><span class="s2-pill s2-pill--progress">In progress</span></li>
+              <li><span class="s2-cf-board__name">NEC 500 Class I Div 1</span><span class="s2-pill s2-pill--progress">In progress</span></li>
+              <li><span class="s2-cf-board__name">National schemes</span><span class="s2-pill s2-pill--neutral">Planned</span></li>
+            </ul>
+            <div class="s2-cf-board__foot">
+              <span>Certificates issued</span><strong>None to date</strong>
+            </div>
+            <a href="contact.html?subject=Datasheet%20Request" class="s2-cf-board__link">Request the written schedule &rarr;</a>
+          </aside>
+        </div>
       </div>
     </section>
+
+    <!-- ============ THE THREE MAIN ROUTES ============ -->
     <section class="s2-pg-sec s2-pg-sec--ice">
       <div class="s2-wrap">
         <div class="s2-pg-head" data-reveal><span class="s2-eyebrow"><span class="s2-eyebrow__dot"></span>The three main routes</span>
           <h2>What IECEx, ATEX and NEC 500 each cover</h2>
           <p class="s2-pg-head__lede">Buyers routinely ask for all three at once without needing all three. They are not competing quality grades but three legal and technical systems describing the same physics. Which you need is decided by where the device is used and which code your project was written to.</p>
         </div>
-        <div class="s2-pg-cards">
-          <article class="s2-pg-card" data-reveal><span class="s2-pg-card__n">01</span>
+        <div class="s2-cf-routes">
+          <article class="s2-cf-route" data-reveal>
+            <div class="s2-cf-route__top">
+              <span class="s2-cf-route__logo"><img src="img/cretLogos/iecex.png" alt="IECEx logo" loading="lazy"></span>
+              <span class="s2-cf-route__n">01</span>
+            </div>
             <h3>IECEx</h3>
+            <span class="s2-cf-route__tag">International &middot; IEC&nbsp;60079</span>
             <p>The international scheme, run under the IEC, based on the IEC 60079 series. An IECEx Certificate of Conformity is issued by an accredited certification body against a specific standard edition and carries a schedule listing the conditions of use. It is not a legal requirement anywhere on its own, but it is the technical evidence almost every other scheme is built on, which is why it is the first certificate we are pursuing.</p>
           </article>
-          <article class="s2-pg-card" data-reveal><span class="s2-pg-card__n">02</span>
+          <article class="s2-cf-route" data-reveal>
+            <div class="s2-cf-route__top">
+              <span class="s2-cf-route__logo"><img src="img/cretLogos/atex.png" alt="ATEX Ex mark" loading="lazy"></span>
+              <span class="s2-cf-route__n">02</span>
+            </div>
             <h3>ATEX</h3>
+            <span class="s2-cf-route__tag">European Union &middot; 2014/34/EU</span>
             <p>The European legal regime, Directive 2014/34/EU, governing equipment for explosive atmospheres placed on the EU market. For Category 2 equipment it requires an EU-type examination by a notified body plus a production quality assurance notification, and results in an EU declaration of conformity, CE marking and the equipment marking string. The technical content overlaps IECEx heavily; the legal wrapper does not.</p>
           </article>
-          <article class="s2-pg-card" data-reveal><span class="s2-pg-card__n">03</span>
+          <article class="s2-cf-route" data-reveal>
+            <div class="s2-cf-route__top">
+              <span class="s2-cf-route__logo"><span class="s2-cf-mark" role="img" aria-label="UKEX">UK<b>Ex</b></span></span>
+              <span class="s2-cf-route__n">03</span>
+            </div>
             <h3>UKEX</h3>
-            <p>Great Britain’s equivalent, using approved bodies, the UKCA mark and a UK declaration of conformity. Northern Ireland continues to follow the EU regime. A device with an EU-type examination still needs the UK route completed separately, so we are running both.</p>
+            <span class="s2-cf-route__tag">Great Britain &middot; UKCA</span>
+            <p>Great Britain&rsquo;s equivalent, using approved bodies, the UKCA mark and a UK declaration of conformity. Northern Ireland continues to follow the EU regime. A device with an EU-type examination still needs the UK route completed separately, so we are running both.</p>
           </article>
-          <article class="s2-pg-card" data-reveal><span class="s2-pg-card__n">04</span>
+          <article class="s2-cf-route" data-reveal>
+            <div class="s2-cf-route__top">
+              <span class="s2-cf-route__logo s2-cf-route__logo--wide"><img src="img/cretLogos/nec-500.png" alt="NEC 500 Class I Division 1 mark" loading="lazy"></span>
+              <span class="s2-cf-route__n">04</span>
+            </div>
             <h3>NEC 500</h3>
+            <span class="s2-cf-route__tag">USA &amp; Canada &middot; Class I Div 1</span>
             <p>The North American division system, used in the United States and, through the Canadian Electrical Code, in Canada. Class I Division 1 is the rough counterpart of Zone 1 and uses groups A to D rather than IIA to IIC, certified by a Nationally Recognized Testing Laboratory. NEC 505 offers a zone alternative, but most American specifications are still written in divisions.</p>
           </article>
-          <article class="s2-pg-card" data-reveal><span class="s2-pg-card__n">05</span>
+          <article class="s2-cf-route s2-cf-route--wide" data-reveal>
+            <div class="s2-cf-route__top">
+              <span class="s2-cf-route__n">05</span>
+            </div>
             <h3>Marking strings</h3>
+            <span class="s2-cf-route__tag">How to read the EX&#8209;04Z1 target marking</span>
             <p>The marking is not decoration. II 2 G Ex ib IIC T4 tells a competent person the equipment group, category, protection concept, gas group and temperature class. Your classification drawing states what the area requires, the marking states what the equipment offers, and the two are compared line by line before a device goes through the gate.</p>
+            <ol class="s2-cf-marking" aria-label="II 2 G Ex ib IIC T4, decoded">
+              <li><b>II</b><span>Equipment group &middot; surface industry</span></li>
+              <li><b>2 G</b><span>Category &middot; Zone&nbsp;1 gas</span></li>
+              <li><b>Ex ib</b><span>Protection concept &middot; intrinsic safety</span></li>
+              <li><b>IIC</b><span>Gas group &middot; incl. hydrogen</span></li>
+              <li><b>T4</b><span>Temperature class &middot; &le;&nbsp;135&nbsp;&deg;C</span></li>
+            </ol>
           </article>
-          <article class="s2-pg-card" data-reveal><span class="s2-pg-card__n">06</span>
+          <article class="s2-cf-route s2-cf-route--wide" data-reveal>
+            <div class="s2-cf-route__top">
+              <span class="s2-cf-route__n">06</span>
+            </div>
             <h3>What a certificate does not do</h3>
+            <span class="s2-cf-route__tag">Operator approval is separate</span>
             <p>A certificate is not an operator approval. Many large operators run their own engineering or telecoms review on top of national conformity, so a device can be fully certified and still be unusable on a particular site. Plan for two timelines.</p>
+            <div class="s2-cf-lanes" aria-label="Two approval timelines">
+              <div class="s2-cf-lane"><span class="s2-cf-lane__label">Timeline 1</span><strong>Ex certificate &amp; national conformity</strong><span class="s2-cf-lane__bar"><i style="width:62%"></i></span></div>
+              <div class="s2-cf-lane"><span class="s2-cf-lane__label">Timeline 2</span><strong>Operator engineering &amp; telecoms review</strong><span class="s2-cf-lane__bar s2-cf-lane__bar--b"><i style="width:34%"></i></span></div>
+            </div>
           </article>
         </div>
       </div>
     </section>
+
+    <!-- ============ REGIONAL SCHEMES ============ -->
     <section class="s2-pg-sec">
       <div class="s2-wrap">
         <div class="s2-pg-head" data-reveal><span class="s2-eyebrow"><span class="s2-eyebrow__dot"></span>Regional schemes</span>
           <h2>National schemes being pursued after IECEx</h2>
           <p class="s2-pg-head__lede">Most national schemes accept an IECEx Certificate of Conformity plus a national test report or acceptance procedure, which is why the sequence matters: IECEx first, then the national routes in the order the launch markets demand. None of the following is complete, and completion dates are to be confirmed at launch.</p>
         </div>
-        <div class="s2-pg-dlcols">
-          <div class="s2-pg-dlcol" data-reveal>
-            <dl class="s2-pg-dl">
-              <div><dt>IECEx</dt><dd>International basis certificate · in progress</dd></div>
-              <div><dt>ATEX (EU)</dt><dd>EU-type examination and production QA · in progress</dd></div>
-              <div><dt>UKEX (Great Britain)</dt><dd>Approved body route, UKCA · in progress</dd></div>
-              <div><dt>NEC 500 (USA)</dt><dd>Class I Div 1 via an NRTL · in progress</dd></div>
-              <div><dt>INMETRO (Brazil)</dt><dd>Mandatory national Ex certification · planned</dd></div>
-              <div><dt>PESO (India)</dt><dd>Petroleum and Explosives Safety Organisation approval · planned</dd></div>
-              <div><dt>EAC Ex (Eurasian Union)</dt><dd>TR CU 012/2011 technical regulation · planned</dd></div>
-            </dl>
-          </div>
-          <div class="s2-pg-dlcol" data-reveal>
-            <dl class="s2-pg-dl">
-              <div><dt>CSA (Canada)</dt><dd>Canadian Electrical Code certification · planned</dd></div>
-              <div><dt>NEPSI (China)</dt><dd>National Supervision and Inspection Centre · planned</dd></div>
-              <div><dt>ANZEx (Australia, New Zealand)</dt><dd>IECEx-based national scheme · planned</dd></div>
-              <div><dt>KOSHA (South Korea)</dt><dd>Korea Occupational Safety and Health Agency · planned</dd></div>
-              <div><dt>TIIS (Japan)</dt><dd>Technology Institution of Industrial Safety · planned</dd></div>
-              <div><dt>Radio approvals</dt><dd>Separate from Ex, per country · planned</dd></div>
-              <div><dt>Sequence</dt><dd>IECEx first, national schemes follow</dd></div>
-            </dl>
-          </div>
+
+        <ol class="s2-cf-seq" data-reveal aria-label="Certification sequence">
+          <li class="is-active"><span>1</span>IECEx basis certificate</li>
+          <li class="is-active"><span>2</span>ATEX &middot; UKEX &middot; NEC&nbsp;500</li>
+          <li><span>3</span>National schemes</li>
+          <li><span>4</span>Radio approvals per country</li>
+        </ol>
+
+        <h3 class="s2-cf-group" data-reveal>Primary routes <span class="s2-pill s2-pill--progress">In progress</span></h3>
+        <div class="s2-cf-schemes" data-reveal>
+          <div class="s2-cf-scheme"><div><strong>IECEx</strong><span>International &middot; basis certificate</span></div></div>
+          <div class="s2-cf-scheme"><div><strong>ATEX</strong><span>European Union &middot; EU-type examination and production QA</span></div></div>
+          <div class="s2-cf-scheme"><div><strong>UKEX</strong><span>Great Britain &middot; approved body route, UKCA</span></div></div>
+          <div class="s2-cf-scheme"><div><strong>NEC 500</strong><span>USA &middot; Class I Div 1 via an NRTL</span></div></div>
+        </div>
+
+        <h3 class="s2-cf-group" data-reveal>National schemes <span class="s2-pill s2-pill--neutral">Planned</span></h3>
+        <div class="s2-cf-schemes s2-cf-schemes--3" data-reveal>
+          <div class="s2-cf-scheme"><div><strong>INMETRO</strong><span>Brazil &middot; mandatory national Ex certification</span></div></div>
+          <div class="s2-cf-scheme"><div><strong>PESO</strong><span>India &middot; Petroleum and Explosives Safety Organisation approval</span></div></div>
+          <div class="s2-cf-scheme"><div><strong>EAC Ex</strong><span>Eurasian Union &middot; TR CU 012/2011 technical regulation</span></div></div>
+          <div class="s2-cf-scheme"><div><strong>CSA</strong><span>Canada &middot; Canadian Electrical Code certification</span></div></div>
+          <div class="s2-cf-scheme"><div><strong>NEPSI</strong><span>China &middot; National Supervision and Inspection Centre</span></div></div>
+          <div class="s2-cf-scheme"><div><strong>ANZEx</strong><span>Australia, New Zealand &middot; IECEx-based national scheme</span></div></div>
+          <div class="s2-cf-scheme"><div><strong>KOSHA</strong><span>South Korea &middot; Korea Occupational Safety and Health Agency</span></div></div>
+          <div class="s2-cf-scheme"><div><strong>TIIS</strong><span>Japan &middot; Technology Institution of Industrial Safety</span></div></div>
+          <div class="s2-cf-scheme s2-cf-scheme--note"><div><strong>Radio approvals</strong><span>Separate from Ex, per country</span></div></div>
         </div>
       </div>
     </section>
+
+    <!-- ============ DOCUMENTS ============ -->
     <section class="s2-pg-sec s2-pg-sec--ice">
-      <div class="s2-wrap s2-pg-route">
-        <div class="s2-pg-route__prose" data-reveal><span class="s2-eyebrow"><span class="s2-eyebrow__dot"></span>Documents</span>
+      <div class="s2-wrap s2-cf-docs">
+        <div class="s2-cf-docs__text" data-reveal><span class="s2-eyebrow"><span class="s2-eyebrow__dot"></span>Documents</span>
           <h2>What a certificate schedule contains, and why you should read it</h2>
           <div class="s2-pg-prose">
             <p>A certificate is a short front sheet and a much more important annex called the schedule. The front sheet gives the certificate number, the issuing body, the applicant, the equipment name, the standards and editions applied, and the marking string. The schedule is where the engineering lives, and it decides whether a device is genuinely fit for your area.</p>
             <p>The schedule describes the equipment and its variants, lists the standards and any deviations, and sets out the conditions of safe use, sometimes called special conditions and flagged by an X after the certificate number. Those conditions are binding. They are where you find restrictions on charging location, on which accessories and batteries may be used, on ambient temperature range, on electrostatic charge on plastic surfaces, and on what may be connected to a port. A device used outside its conditions of safe use is not a certified device.</p>
             <p>The schedule also records the type and routine tests performed and, in an ATEX file, is accompanied by the production quality assurance notification confirming the factory is audited to build the certified design repeatedly. That is the point buyers most often miss: an Ex certificate covers a manufacturing arrangement as well as a design, which is why parts, batteries and repairs must come through authorised channels.</p>
-            <p>When the EX-04Z1 certificates are issued, the pack supplied to buyers will contain the IECEx Certificate of Conformity, the ATEX certificate and full marking string, the EU and UK declarations of conformity, the national certificate for the destination market, the user manual carrying the conditions of safe use, and the EMM and MDM deployment guide. Every one of those is on completion of certification, because that is the truth today.</p>
           </div>
         </div>
-        <aside class="s2-pg-panel" data-reveal>
-          <h3>On a certificate schedule</h3>
-          <dl class="s2-pg-dl">
-            <div><dt>Certificate number</dt><dd>Plus X for special conditions</dd></div>
-            <div><dt>Issuing body</dt><dd>Named and accredited</dd></div>
-            <div><dt>Standards</dt><dd>Series and edition applied</dd></div>
-            <div><dt>Marking string</dt><dd>Group, category, concept, gas group, T class</dd></div>
-            <div><dt>Conditions of safe use</dt><dd>Binding restrictions</dd></div>
-            <div><dt>Manufacturing</dt><dd>Production QA notification</dd></div>
-          </dl>
-        </aside>
+
+        <div class="s2-cf-docs__side">
+          <aside class="s2-cf-sheet" data-reveal>
+            <div class="s2-cf-sheet__head">
+              <div><h3>On a certificate schedule</h3><span>What to look for, line by line</span></div>
+            </div>
+            <dl class="s2-cf-sheet__rows">
+              <div><dt>Certificate number</dt><dd>Plus X for special conditions</dd></div>
+              <div><dt>Issuing body</dt><dd>Named and accredited</dd></div>
+              <div><dt>Standards</dt><dd>Series and edition applied</dd></div>
+              <div><dt>Marking string</dt><dd>Group, category, concept, gas group, T class</dd></div>
+              <div><dt>Conditions of safe use</dt><dd>Binding restrictions</dd></div>
+              <div><dt>Manufacturing</dt><dd>Production QA notification</dd></div>
+            </dl>
+          </aside>
+
+          <div class="s2-cf-pack" data-reveal>
+            <h3>The buyer pack, on certification</h3>
+            <p>When the EX-04Z1 certificates are issued, the pack supplied to buyers will contain:</p>
+            <ul>
+              <li>IECEx Certificate of Conformity</li>
+              <li>ATEX certificate and full marking string</li>
+              <li>EU and UK declarations of conformity</li>
+              <li>National certificate for the destination market</li>
+              <li>User manual carrying the conditions of safe use</li>
+              <li>EMM and MDM deployment guide</li>
+            </ul>
+            <p class="s2-cf-pack__note">Every one of those is on completion of certification, because that is the truth today.</p>
+          </div>
+        </div>
       </div>
     </section>
+
+    <!-- ============ HOW TO USE THIS ============ -->
     <section class="s2-pg-sec">
       <div class="s2-wrap">
         <div class="s2-pg-head" data-reveal><span class="s2-eyebrow"><span class="s2-eyebrow__dot"></span>How to use this</span>
@@ -223,16 +320,56 @@
           <li class="s2-pg-step" data-reveal><span class="s2-pg-step__n">04</span>
           <div>
             <h3>Confirm the operator and national gates separately</h3>
-            <p>National conformity, radio registration and the operator’s own engineering approval are three different gates, and a device can pass one and fail another. Ask which are complete for your country and site, not in general.</p>
+            <p>National conformity, radio registration and the operator&rsquo;s own engineering approval are three different gates, and a device can pass one and fail another. Ask which are complete for your country and site, not in general.</p>
           </div></li>
         </ol>
       </div>
     </section>
+
     <section class="s2-pg-sec s2-pg-sec--ice" id="faq">
       <div class="s2-wrap">
         <div class="s2-pg-split">
           <div class="s2-pg-head" data-reveal><span class="s2-eyebrow"><span class="s2-eyebrow__dot"></span>Questions</span>
             <h2>Certification questions</h2>
+            <div class="s2-cf-ask">
+              <svg class="s2-cf-ask__art" viewBox="0 0 320 220" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <defs>
+                  <linearGradient id="s2CfAskFront" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0" stop-color="#4aa3ff"/>
+                    <stop offset="1" stop-color="#1f6fd1"/>
+                  </linearGradient>
+                  <radialGradient id="s2CfAskGlow" cx="50%" cy="50%" r="50%">
+                    <stop offset="0" stop-color="#6db2ff" stop-opacity=".28"/>
+                    <stop offset="1" stop-color="#6db2ff" stop-opacity="0"/>
+                  </radialGradient>
+                  <filter id="s2CfAskShadow" x="-20%" y="-20%" width="140%" height="150%">
+                    <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#0f2846" flood-opacity=".16"/>
+                  </filter>
+                </defs>
+                <circle cx="160" cy="112" r="104" fill="url(#s2CfAskGlow)"/>
+                <!-- back bubble: an answer -->
+                <g filter="url(#s2CfAskShadow)">
+                  <path d="M150 38h118a18 18 0 0 1 18 18v58a18 18 0 0 1-18 18h-12l2 20-24-20h-84a18 18 0 0 1-18-18V56a18 18 0 0 1 18-18Z" fill="#fff" stroke="#dbe7f6" stroke-width="1.5"/>
+                </g>
+                <rect x="190" y="62" width="70" height="8" rx="4" fill="#dbe7f6"/>
+                <rect x="190" y="80" width="56" height="8" rx="4" fill="#eaf3fe"/>
+                <rect x="190" y="98" width="64" height="8" rx="4" fill="#eaf3fe"/>
+                <!-- front bubble: the question -->
+                <g filter="url(#s2CfAskShadow)">
+                  <path d="M52 78h104a20 20 0 0 1 20 20v62a20 20 0 0 1-20 20H90l-28 22 3-22h-13a20 20 0 0 1-20-20V98a20 20 0 0 1 20-20Z" fill="url(#s2CfAskFront)"/>
+                </g>
+                <text x="104" y="152" text-anchor="middle" font-family="'Space Grotesk','Inter',sans-serif" font-size="68" font-weight="700" fill="#fff">?</text>
+                <!-- FAQ tag -->
+                <rect x="222" y="148" width="64" height="30" rx="15" fill="#0a1e33"/>
+                <text x="254" y="168" text-anchor="middle" font-family="'Space Grotesk','Inter',sans-serif" font-size="13" font-weight="700" letter-spacing="1.5" fill="#fff">FAQ</text>
+                <circle cx="44" cy="46" r="5" fill="#6db2ff" opacity=".55"/>
+                <circle cx="292" cy="30" r="3.5" fill="#2f8fef" opacity=".45"/>
+                <circle cx="300" cy="196" r="4" fill="#6db2ff" opacity=".5"/>
+              </svg>
+              <h3>Still have a question?</h3>
+              <p>Ask the team running the certification programme. You will get the current stage of each route in writing.</p>
+              <a href="contact.html?subject=Product%20Enquiry" class="s2-btn s2-btn--primary s2-btn--sm">Ask a certification question &rarr;</a>
+            </div>
           </div>
           <div class="s2-pg-faq">
             <details class="s2-pg-qa" data-reveal>
@@ -262,7 +399,7 @@
             <details class="s2-pg-qa" data-reveal>
               <summary>Will a certificate be issued for my country?</summary>
               <div class="s2-pg-qa__a">
-                <p>Tell us the country and we will say where it sits in the sequence. INMETRO, PESO, EAC Ex, CSA, NEPSI, ANZEx, KOSHA and TIIS are all planned after IECEx, because most of them build on the IECEx report.</p>
+                <p>Tell us the country and we will say where it sits in the sequence. INMETRO, EAC Ex, CSA, NEPSI, ANZEx, KOSHA and TIIS are all planned after IECEx, because most of them build on the IECEx report.</p>
               </div>
             </details>
             <details class="s2-pg-qa" data-reveal>
