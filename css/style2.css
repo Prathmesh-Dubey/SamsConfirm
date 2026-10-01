@@ -169,7 +169,7 @@ svg{ width: 100%; height: 100%; }
 }
 .s2-nav__logo{ display: flex; align-items: center; gap: 12px; flex-shrink: 0; }
 .s2-nav__logo img{ height: 36px; width: auto; }
-.s2-nav__logo-text{ font-family: var(--font-head); font-weight: 700; font-size: 19px; color: var(--navy); }
+.s2-nav__logo-text{ font-family: var(--font-head); font-weight: 700; font-size: 19px; color: #000; }
 .s2-nav__logo-text em{ font-style: normal; color: var(--sky-deep); }
 
 .s2-nav__links{ display: flex; align-items: center; gap: 6px; }
@@ -1924,7 +1924,16 @@ svg{ width: 100%; height: 100%; }
 .s2-mk-region__head h2{ grid-column: 2; font-size: clamp(24px, 2.6vw, 32px); text-align: center; }
 
 /* country tiles: flag + name, left-aligned grid */
-.s2-mk-grid{ display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; }
+.s2-mk-grid{ display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
+.s2-mk-grid > .s2-mk-tile{ flex: 0 0 calc((100% - 48px) / 5); min-width: 0; }
+@media (min-width: 1101px){
+  #americas .s2-mk-grid{ max-width: 760px; margin-inline: auto; }
+  #americas .s2-mk-grid > .s2-mk-tile{ flex-basis: calc((100% - 24px) / 3); }
+  #asia-pacific .s2-mk-grid, #africa-cis .s2-mk-grid{ max-width: 980px; margin-inline: auto; }
+  #asia-pacific .s2-mk-grid > .s2-mk-tile, #africa-cis .s2-mk-grid > .s2-mk-tile{ flex-basis: calc((100% - 36px) / 4); }
+}
+@media (max-width: 1100px){ .s2-mk-grid > .s2-mk-tile{ flex-basis: calc((100% - 36px) / 4); } }
+@media (max-width: 860px){ .s2-mk-grid > .s2-mk-tile{ flex-basis: calc((100% - 24px) / 3); } }
 .s2-mk-tile{
   display: flex; align-items: center; gap: 14px; padding: 14px 16px; border-radius: 14px; background: #fff;
   border: 1px solid var(--border); box-shadow: var(--shadow-sm);
@@ -1940,7 +1949,8 @@ svg{ width: 100%; height: 100%; }
 @media (max-width: 640px){
   .s2-mk-region + .s2-mk-region{ margin-top: 48px; }
   .s2-mk-region__head{ gap: 12px; }
-  .s2-mk-grid{ grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  .s2-mk-grid{ gap: 10px; }
+  .s2-mk-grid > .s2-mk-tile{ flex-basis: calc((100% - 10px) / 2); }
   .s2-mk-tile{ gap: 10px; padding: 12px; }
   .s2-mk-tile__flag{ width: 32px; height: 24px; }
   .s2-mk-tile__name{ font-size: 13.5px; }
