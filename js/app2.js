@@ -25,6 +25,29 @@ document.addEventListener("DOMContentLoaded", function () {
         })
       );
     }
+
+    /* Language dropdown */
+    const langBtn = document.getElementById("s2LangBtn");
+    const langMenu = document.getElementById("s2LangMenu");
+    if (langBtn && langMenu) {
+      const setLang = (open) => {
+        langMenu.hidden = !open;
+        langBtn.setAttribute("aria-expanded", String(open));
+      };
+      langBtn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        setLang(langMenu.hidden);
+      });
+      document.addEventListener("click", (e) => {
+        if (!langMenu.hidden && !langMenu.contains(e.target)) setLang(false);
+      });
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && !langMenu.hidden) {
+          setLang(false);
+          langBtn.focus();
+        }
+      });
+    }
   })();
 
   /* ---------------------------------------------------------------- */
